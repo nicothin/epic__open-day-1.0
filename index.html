@@ -9,6 +9,7 @@
   <style>
     .slide {padding: 50px 60px 0 96px;}
     .scrshot {max-width: 100%;}
+    .no-num:after {display: none;}
   </style>
 </head>
 <body class="shower list">
@@ -79,6 +80,7 @@
     <ul class="double">
       <li>Умение «думать блоками», БЭМ</li>
       <li>Редактор кода, плагины</li>
+      <li>Работа в консоли</li>
       <li>Системы контроля версий</li>
       <li>Кодгайды</li>
       <li>CSS- и HTML-процессинг</li>
@@ -96,6 +98,110 @@
   <section class="slide">
     <h2>Умение «думать блоками/компонентами»</h2>
     <img src="./pictures/screen01.png" alt="" class="scrshot">
+  </section>
+
+  <section class="slide">
+    <h2>Редактор кода, плагины</h2>
+    <ul>
+      <li>Выбрать свой. Должен быть кроссплатформенным.</li>
+      <li>Изучить возможности, настройки, <strong>горячие клавиши</strong>.</li>
+      <li>Попробовать, как минимум, Sublime Text, Atom, VS Code, Brackets</li>
+      <li>Плагины: Emmet, EditorСonfig, автодополнение путей, проекты</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h2>Работа в консоли</h2>
+    <pre>
+      <code>pwd
+/Users/nicothin/projects
+mkdir -p test-project/{css,js,img,fonts}
+cd test-project && touch index.html && atom .
+git init
+git add .
+git commit -m "Добавил главную страницу"
+</code>
+    </pre>
+  </section>
+
+  <section class="slide">
+    <h2>Системы контроля версий</h2>
+    <pre>
+      <code>* 5422589 2016-12-17 | Add catalog styles [Nikolay Gromov]
+* bb97b01 2016-12-16 | Basic style [Nikolay Gromov]
+*   26c8855 2016-12-16 | Add contacts [Nikolay Gromov]
+|\
+| * 843aade 2016-12-15 | Fix catalog layout [Nikolay Gromov]
+* | 1f685ae 2016-12-16 | Add photo [Nikolay Gromov]
+|/
+* fcae28c 2016-12-15 | Add catalog [Nikolay Gromov]
+* deba91e 2016-12-15 | Initial commit [Nikolay Gromov]</code>
+    </pre>
+  </section>
+
+  <section class="slide">
+    <h2>Кодгайды</h2>
+    <pre>
+      <code>&lt;ul class=&quot;block&quot;&gt;</code>
+      <code>  &lt;li class=&quot;block__item&quot;&gt;</code>
+      <code>    &lt;a href=&quot;index.html&quot; class=&quot;block__link&quot;&gt;&Gcy;&lcy;&acy;&vcy;&ncy;&acy;&yacy;&lt;/a&gt;</code>
+      <code>  &lt;/li&gt;</code>
+      <code>  &lt;li class=&quot;block__item&quot;&gt;</code>
+      <code>    &lt;a href=&quot;catalog.html&quot; class=&quot;block__link&quot;&gt;&Kcy;&acy;&tcy;&acy;&lcy;&ocy;&gcy;&lt;/a&gt;</code>
+      <code>  &lt;/li&gt;</code>
+      <code>&lt;/ul&gt;</code>
+    </pre>
+  </section>
+
+  <section class="slide">
+    <h2>Кодгайды</h2>
+    <pre>
+      <code>.block,</code>
+      <code>.other-block {</code>
+      <code>  display: block;</code>
+      <code>  margin: 0;</code>
+      <code>  padding: 20rem;</code>
+      <code>}</code>
+    </pre>
+  </section>
+
+  <section class="slide no-num">
+    <h2>CSS-процессинг</h2>
+    <pre>
+      <code>.block {</code>
+      <code>  display: block;</code>
+      <code> </code>
+      <code>  a {</code>
+      <code>    color: #000;</code>
+      <code>  }</code>
+      <code> </code>
+      <code>  @media screen and (min-width: @screen-tablet) {</code>
+      <code>    display: none;</code>
+      <code>  }</code>
+      <code>}</code>
+    </pre>
+  </section>
+
+  <section class="slide no-num">
+    <h2>CSS-процессинг</h2>
+    <ul>
+      <li>LESS, Sass/SCSS, stylus</li>
+      <li>PostCSS</li>
+    </ul>
+    <p>Препроцессинг и постпроцессинг.</p>
+  </section>
+
+  <section class="slide no-num">
+    <h2>HTML-процессинг</h2>
+    <ul>
+      <li>Вставки одних файлов в другие</li>
+      <li>Pug, Haml</li>
+    </ul>
+    <pre>
+      <code>section.block#posd-id-146</code>
+      <code>  h1.block__title Привет, я блок</code>
+      <code>  .block__text Я сфероподобен в вакууме и невообразимо крут</code>
+    </pre>
   </section>
 
   <section class="slide">
