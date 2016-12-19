@@ -10,6 +10,7 @@
     .slide {padding: 50px 60px 0 96px;}
     .scrshot {max-width: 100%;}
     .no-num:after {display: none;}
+    .slide pre code {line-height: 1.8;}
   </style>
 </head>
 <body class="shower list">
@@ -80,6 +81,7 @@
     <ul class="double">
       <li>Умение «думать блоками», БЭМ</li>
       <li>Редактор кода, плагины</li>
+      <li>Средства разработчика в браузерах</li>
       <li>Работа в консоли</li>
       <li>Системы контроля версий</li>
       <li>Кодгайды</li>
@@ -90,6 +92,7 @@
       <li>Автоматизация</li>
       <li>Собственный стартовый проект</li>
       <li>Фреймворки для верстки</li>
+      <li>Прогрессивное улучшение</li>
       <li>Юзабилити и доступность</li>
       <li>Оптимизация загрузки</li>
     </ul>
@@ -127,6 +130,11 @@
   </section>
 
   <section class="slide">
+    <h2>Средства разработчика в браузерах</h2>
+    <img src="./pictures/screen04.png" alt="" style="width: 100vw; height: 500px;">
+  </section>
+
+  <section class="slide">
     <h2>Работа в консоли</h2>
     <pre>
       <code>pwd
@@ -138,6 +146,15 @@ git add .
 git commit -m "Добавил главную страницу"
 </code>
     </pre>
+  </section>
+
+  <section class="slide no-num black">
+    <img src="./pictures/matrix.gif" alt="" class="cover" style="width:100%;object-fit: cover;">
+  </section>
+
+  <section class="slide">
+    <h2>Системы контроля версий</h2>
+    <img src="./pictures/screen02.png" alt="">
   </section>
 
   <section class="slide">
@@ -188,7 +205,7 @@ git commit -m "Добавил главную страницу"
       <code>  display: block;</code>
       <code> </code>
       <code>  a {</code>
-      <code>    color: #000;</code>
+      <code>    color: @color-blue;</code>
       <code>  }</code>
       <code> </code>
       <code>  @media screen and (min-width: @screen-tablet) {</code>
@@ -218,6 +235,129 @@ git commit -m "Добавил главную страницу"
       <code>  h1.block__title Привет, я блок</code>
       <code>  .block__text Я сфероподобен в вакууме и невообразимо крут</code>
     </pre>
+  </section>
+
+  <section class="slide no-num">
+    <h2>Javascript</h2>
+    <pre>
+      <code>&lt;pre id=&quot;jsFragment&quot;&gt;</code>
+      <code>  ...</code>
+      <code>&lt;/pre&gt;</code>
+    </pre>
+    <pre id="jsFragment">
+      <code>jsFragment.addEventListener("click", handler);</code>
+      <code> </code>
+      <code>function handler(){</code>
+      <code>  alert('Не тыкай в код!');</code>
+      <code>}</code>
+    </pre>
+    <script>
+      jsFragment.addEventListener("click", handler);
+      function handler(){
+        alert('Не тыкай в код!');
+      }
+    </script>
+  </section>
+
+  <section class="slide no-num">
+    <h2>SVG</h2>
+    <img src="./pictures/kivi.svg" alt="">
+  </section>
+
+  <section class="slide no-num">
+    <h2>SVG</h2>
+    <pre>
+      <code>&lt;svg width=&quot;612&quot; height=&quot;502&quot; viewBox=&quot;0 65 612 502&quot;&gt;</code>
+      <code>  &lt;style/&gt;...&lt;/style&gt;</code>
+      <code>  &lt;ellipse class=&quot;ground&quot; cx=&quot;283.5&quot; cy=&quot;487.5&quot; rx=&quot;259&quot; ry=&quot;80&quot;/&gt;</code>
+      <code>  &lt;path class=&quot;kiwi&quot; d=&quot;...&quot;/&gt;</code>
+      <code>&lt;/svg&gt;</code>
+    </pre>
+  </section>
+
+  <section class="slide no-num">
+    <h2>SVG</h2>
+    <p>Все преимущества векторной графики плюс:</p>
+    <ul>
+      <li>Анимации</li>
+      <li>JS-интерактив</li>
+      <li>Фильтры размытия, подрезки, цветовой трансформации</li>
+      <li>Режимы наложения</li>
+      <li>Текст по кривой линии</li>
+      <li>Картинка в фоне текста</li>
+    </ul>
+  </section>
+
+  <section class="slide no-num">
+    <h2>Сontent management system</h2>
+    <ul>
+      <li>Wordpress</li>
+      <li>Drupal</li>
+      <li>Joomla</li>
+      <li>MODx</li>
+      <li>DLE</li>
+    </ul>
+  </section>
+
+  <section class="slide no-num">
+    <h2>Автоматизация</h2>
+    <ul>
+      <li>Компиляция и транспиляция</li>
+      <li>Минификация / бьютификация</li>
+      <li>Оптимизация изображений</li>
+      <li>Сборка спрайтов и библиотек символов</li>
+      <li>Пересборка при изменении файлов</li>
+      <li>Публикация на GH-pages или по FTP</li>
+      <li>Проверка кода и орфографии</li>
+    </ul>
+  </section>
+
+  <section class="slide no-num">
+    <h2>Собственный стартовый проект</h2>
+    <ul>
+      <li>Настроенная привычная среда</li>
+      <li>Простая расширяемость</li>
+      <li>Лёгкое добавление фреймворков</li>
+      <li>Накопление технологических решений</li>
+      <li>Своя библиотеа блоков</li>
+    </ul>
+  </section>
+
+  <section class="slide no-num">
+    <h2>Фреймворки для верстки</h2>
+    <ul>
+      <li>Bootstrap</li>
+      <li>Foundation</li>
+      <li><a href="http://usablica.github.io/front-end-frameworks/compare.html">Тысячи их</a></li>
+    </ul>
+  </section>
+
+  <section class="slide no-num">
+    <h2>Прогрессивное улучшение</h2>
+    <ul>
+      <li>Страница должна выглядеть адекватно и работать без CSS и JS. <br>Или же нет.</li>
+      <li>В старых браузерах могут не работать некритичные для использования сайта «фишечки».</li>
+      <li>На мобильных устройствах могут не работать какие-либо «тяжелые» эффекты.</li>
+    </ul>
+  </section>
+
+  <section class="slide no-num">
+    <h2>Юзабилити, адаптивность, доступность</h2>
+    <ul>
+      <li>Интерфейс, не заставляющий думать об интерфейсе</li>
+      <li>Удобство использования с тач-интерфейсом</li>
+      <li>Пригодность для экранных читалок</li>
+    </ul>
+    <img src="./pictures/screen03.png" alt="" style="border: 1px solid #ddd; display: block; margin: auto;">
+  </section>
+
+  <section class="slide no-num">
+    <h2>Оптимизация загрузки</h2>
+    <ul>
+      <li>Загрузка стилей, скриптов, шрифтов, картинок</li>
+      <li>Оптимизация и конкатенация силей и скриптов</li>
+      <li>Критический CSS</li>
+    </ul>
   </section>
 
   <section class="slide">
